@@ -68,7 +68,7 @@ public class MainActivity extends ActionBarActivity implements SensorEventListen
     public void startListener(View view) {
         Intent i = new Intent(this, serverService.class);
         i.putExtra("AccelX", mSensorX);
-        i.putExtra("AccelY", mSensorY)
+        i.putExtra("AccelY", mSensorY);
         startService(i);
     }
 
